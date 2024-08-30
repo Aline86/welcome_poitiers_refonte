@@ -1,10 +1,13 @@
 import './global.css'
-import PageContext from './PageContext'
-
+import Welcome from './components/welcome_page/welcome'
+import ThemContextProvider from './Context'
 function App() {
  
   return (
-      <PageContext />
+    <ThemContextProvider>
+        <Welcome />
+    </ThemContextProvider>
+     
   )
 }
 
