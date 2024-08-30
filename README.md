@@ -1,3 +1,3 @@
-# Projet en construct de l'association Welcome Poitiers
+# Projet en construction de l'association Welcome Poitiers
 
 
