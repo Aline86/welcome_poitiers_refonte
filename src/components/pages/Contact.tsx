@@ -16,7 +16,7 @@ export default function Contact(){
                 <br />
                 <p><b>Adresse postale: </b> 23-25, rue du Général Sérail 86000 POITIERS</p>
             </div>
-            <div className={!result ? `${"footer fixed"}` : `${"footer not-fixed"}`}>
+            <div className={!result.matches ? `${"footer fixed"}` : `${"footer not-fixed"}`}>
                 <Footer />
             </div>
         </div>
