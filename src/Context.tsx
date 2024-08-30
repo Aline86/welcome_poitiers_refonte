@@ -6,49 +6,35 @@ import Valeurs from './components/pages/Valeurs'
 import WelcomePage from './components/welcome_page/welcome'
 import {BASE_URL_SITE} from './config.tsx'
 import NotFound from './components/pages/NotFound'
-import { createBrowserRouter, RouterProvider, HashRouter} from "react-router-dom";
+import { HashRouter, Routes, Route} from "react-router-dom";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <WelcomePage />
-  },
-  {
-  path: "/valeurs",
-    element: <Valeurs />
-  },
-  {
-    path: "/presentation",
-    element: <Presentation />
-  },
-  {
-    path: "/actualites",
-    element: <Actualites />
-  },
-  {
-    path: "/adhesion",
-    element: <Adhesion />
-  },
-  {
-    path: "/contact",
-    element: <Contact />
-  }
- ,
-  {
-    path: "*",
-    element: <NotFound />
-  }
-])
-function ThemContextProvider({children}:{children: any}) {
+function ThemContextProvider({}:{}) {
 
   return (
     <div className="root">
-      <HashRouter basename={BASE_URL_SITE}>
-        <RouterProvider router={router} fallbackElement={children}>
-        
-        
-            
-        </RouterProvider>
+        <HashRouter basename={BASE_URL_SITE}>
+            <Routes>
+              <Route path="/" element={<WelcomePage />}>
+                Accueil
+              </Route>
+              <Route path="/valeurs" element={<Valeurs />}>
+                Présentation
+              </Route>
+              <Route path="/presentation" element={<Presentation />}>
+                Présentation
+              </Route>
+              <Route path="/actualites" element={<Actualites />}>
+                Actualités
+              </Route>
+              <Route path="/contact" element={<Contact />}>
+                Contact
+              </Route>
+              <Route path="/adhesion" element={<Adhesion />}>
+                Adhésion
+              </Route>
+
+            </Routes>
+
       </HashRouter>
         
     
