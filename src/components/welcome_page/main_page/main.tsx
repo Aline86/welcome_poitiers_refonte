@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import s from './style.module.css'
 import Bloc from "./bloc/bloc"
 import card_1 from './img/card_1.jpg'
@@ -6,7 +5,7 @@ import card_2 from './img/card_2.jpg'
 import card_3 from './img/card_3.jpg'
 import card_4 from './img/card_4.jpg'
 import card_5 from './img/card_5.png'
-import Footer from "../../footer/footer"
+
 interface MainInfo {
 
   

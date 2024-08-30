@@ -8,11 +8,6 @@ interface HeaderBodyInfo {
 
 function HeaderBody({}: HeaderBodyInfo) {
   const [cardWidth, setCardWidth] = useState<number|undefined>(0)
-  const result = window.matchMedia("(max-width: 1000px)");
-  const [resize, setResize] = useState(window.innerWidth);
-  
- 
-  
   const getWidth = useRef<HTMLDivElement|null>(null)
   function updateCardWidth() {
     let widthCard = getWidth.current !== null ? (getWidth.current?.clientWidth) : undefined

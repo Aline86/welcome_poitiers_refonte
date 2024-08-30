@@ -6,7 +6,7 @@ import Contact from './components/pages/Contact'
 import Valeurs from './components/pages/Valeurs'
 import WelcomePage from './components/welcome_page/welcome'
 
-import {Link,  BrowserRouter,  Route, Routes } from "react-router-dom";
+import {BrowserRouter,  Route, Routes } from "react-router-dom";
 
 export default function RoutesElements() {
 
