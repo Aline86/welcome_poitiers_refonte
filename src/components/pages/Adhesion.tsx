@@ -18,7 +18,7 @@ export default function Adhesion(){
                 <br />
                 <button className="gray_button"><a className="no_decoration" href={bulletin_adhesion}>Télécharger le bulletin d'adhésion</a></button>
             </div>
-            <div className={!result ? `${"footer fixed"}` : `${"footer not-fixed"}`}>
+            <div className={!result.matches? `${"footer fixed"}` : `${"footer not-fixed"}`}>
                 <Footer />
             </div>
         </div>

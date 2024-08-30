@@ -52,19 +52,19 @@ function Carousel({width, height, gap, cardNumber}: CustomCarouselInfo) {
   
   }, []);
 
- 
-  if(!result) {
+
     function updateSize() {
       window.location.reload()
     }
     useEffect(() => {
-    
-      window.addEventListener("resize", updateSize);
-      setResize(window.innerWidth);
-   
+      if(!result.matches) {
+ 
+        window.addEventListener("resize", updateSize);
+        setResize(window.innerWidth);
+      }
   
     }, [result])
-  }
+  
 
   return (
     <div className={s.body_container} >
