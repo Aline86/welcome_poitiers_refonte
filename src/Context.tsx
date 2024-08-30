@@ -1,6 +1,3 @@
-import Header from "./components/header/header"
-import Welcome from "./components/welcome_page/welcome"
-
 import Presentation from './components/pages/Presentation'
 import Actualites from './components/pages/Actualites'
 import Adhesion from './components/pages/Adhesion'
@@ -8,7 +5,8 @@ import Contact from './components/pages/Contact'
 import Valeurs from './components/pages/Valeurs'
 import WelcomePage from './components/welcome_page/welcome'
 import NotFound from './components/pages/NotFound'
-import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
+import { createBrowserRouter, RouterProvider} from "react-router-dom";
+
 const router = createBrowserRouter([
   {
     path: "/",

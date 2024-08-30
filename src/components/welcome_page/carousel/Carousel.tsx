@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef, useLayoutEffect } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import s from './styles/style.module.css'
 import CarouselContainer from "./CarouselContainer"
 
@@ -57,7 +57,7 @@ function Carousel({width, height, gap, cardNumber}: CustomCarouselInfo) {
   useEffect(() => {
   
     window.addEventListener("resize", updateSize);
-
+    setResize(window.innerWidth);
  
 
   }, [resize])

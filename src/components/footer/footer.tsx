@@ -2,7 +2,6 @@ import { useState } from 'react'
 import s from './styles.module.css'
 import logo from '../../assets/img/logo.png'
 import facebook from '../../assets/img/facebook.png'
-import {Link} from 'react-router-dom'
 import statut from '../../assets/img/statut.pdf'
 import Iframe from 'react-iframe'
 

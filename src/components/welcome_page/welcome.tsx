@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import s from './style.module.css'
 
 import HeaderBody from "./header_body/header_body"
