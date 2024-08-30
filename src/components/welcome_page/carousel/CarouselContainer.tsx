@@ -61,10 +61,7 @@ function CarouselContainer({colors,  transitionFinished, cardWidth, updateCardRe
       //Clearing the interval
       return () => clearInterval(interval);
   }, [trigger]);
-  if(!result) {
-    useEffect(() => {}, [resize])
-  }
-
+      useEffect(() => {}, [resize])
   return (
     <div className={s.body}/* onTransitionEnd={() => updateTransitionState(false)}*/>
       {transitionFinished ? (<button className={s.left} style={{ pointerEvents: 'none', color: 'lightgray'}}  >&#x27E8;</button>) : (<button className={s.left} style={{marginRight: `${gap}px`}}><span>&#x27E8;</span></button>) }

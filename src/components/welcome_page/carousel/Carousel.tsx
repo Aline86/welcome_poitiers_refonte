@@ -15,6 +15,7 @@ function Carousel({width, height, gap, cardNumber}: CustomCarouselInfo) {
   const [cardWidth, setCardWidth] = useState<number>(0);
   const cardRef = useRef<HTMLDivElement>();
   const [resize, setResize] = useState(window.innerWidth);
+  const result = window.matchMedia("(max-width: 1000px)");
 
   function generateColor() {
     let arrayColors = [];
@@ -51,16 +52,20 @@ function Carousel({width, height, gap, cardNumber}: CustomCarouselInfo) {
   
   }, []);
 
-  function updateSize() {
-    window.location.reload()
-  }
-  useEffect(() => {
-  
-    window.addEventListener("resize", updateSize);
-    setResize(window.innerWidth);
  
+  if(!result) {
+    function updateSize() {
+      window.location.reload()
+    }
+    useEffect(() => {
+    
+      window.addEventListener("resize", updateSize);
+      setResize(window.innerWidth);
+   
+  
+    }, [result])
+  }
 
-  }, [resize])
   return (
     <div className={s.body_container} >
         {colors.length === cardNumber && 
