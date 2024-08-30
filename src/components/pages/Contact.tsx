@@ -2,7 +2,7 @@ import Header from "../header/header"
 import Footer from "../footer/footer"
 
 export default function Contact(){
-
+    const result = window.matchMedia("(max-width: 1000px)");
     return (
 
         <div className="container">
@@ -16,7 +16,7 @@ export default function Contact(){
                 <br />
                 <p><b>Adresse postale: </b> 23-25, rue du Général Sérail 86000 POITIERS</p>
             </div>
-            <div className="footer fixed">
+            <div className={!result ? `${"footer fixed"}` : `${"footer not-fixed"}`}>
                 <Footer />
             </div>
         </div>
