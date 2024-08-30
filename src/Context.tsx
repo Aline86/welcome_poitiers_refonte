@@ -4,7 +4,7 @@ import Adhesion from './components/pages/Adhesion'
 import Contact from './components/pages/Contact'
 import Valeurs from './components/pages/Valeurs'
 import WelcomePage from './components/welcome_page/welcome'
-import NotFound from './components/pages/NotFound'
+//import NotFound from './components/pages/NotFound'
 import { createBrowserRouter, RouterProvider} from "react-router-dom";
 
 const router = createBrowserRouter([
