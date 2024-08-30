@@ -17,11 +17,11 @@ function Main({}: MainInfo) {
   return (
     <>
      <div className={s.container} >
-        <Bloc route="/Presentation" title="Présentation" img={card_1} />
-        <Bloc route="/Valeurs" title="Valeurs" img={card_5} />
-        <Bloc route="/Actualites" title="Actualités" img={card_2}/>
-        <Bloc route="/Adhesion" title="Adhésion" img={card_3}/>
-        <Bloc route="/Contact" title="Contact" img={card_4}/>
+        <Bloc route="/presentation" title="Présentation" img={card_1} />
+        <Bloc route="/valeurs" title="Valeurs" img={card_5} />
+        <Bloc route="/actualites" title="Actualités" img={card_2}/>
+        <Bloc route="/adhesion" title="Adhésion" img={card_3}/>
+        <Bloc route="/contact" title="Contact" img={card_4}/>
       
     </div>
     
