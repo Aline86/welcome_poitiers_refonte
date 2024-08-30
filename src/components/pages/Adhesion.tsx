@@ -3,7 +3,7 @@ import Header from "../header/header"
 import Footer from "../footer/footer"
 
 export default function Adhesion(){
-    
+    const result = window.matchMedia("(max-width: 1000px)");
    
     return (
         <div className="container">
@@ -18,7 +18,7 @@ export default function Adhesion(){
                 <br />
                 <button className="gray_button"><a className="no_decoration" href={bulletin_adhesion}>Télécharger le bulletin d'adhésion</a></button>
             </div>
-            <div className="footer fixed">
+            <div className={!result ? `${"footer fixed"}` : `${"footer not-fixed"}`}>
                 <Footer />
             </div>
         </div>
