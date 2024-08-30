@@ -4,14 +4,13 @@ import Adhesion from './components/pages/Adhesion'
 import Contact from './components/pages/Contact'
 import Valeurs from './components/pages/Valeurs'
 import WelcomePage from './components/welcome_page/welcome'
-import {BASE_URL_SITE} from './config.tsx'
 import {  Routes, Route, HashRouter} from "react-router-dom";
 
 function ThemContextProvider({}:{children: any}) {
 
   return (
     <div className="root">
-      <HashRouter basename={BASE_URL_SITE} >
+      <HashRouter basename={location.host} >
    
         <Routes>
           <Route path="/" element={<WelcomePage />}>
