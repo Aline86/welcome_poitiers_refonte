@@ -4,8 +4,9 @@ import Adhesion from './components/pages/Adhesion'
 import Contact from './components/pages/Contact'
 import Valeurs from './components/pages/Valeurs'
 import WelcomePage from './components/welcome_page/welcome'
-//import NotFound from './components/pages/NotFound'
-import { createBrowserRouter, RouterProvider} from "react-router-dom";
+import {BASE_URL_SITE} from './config.tsx'
+import NotFound from './components/pages/NotFound'
+import { createBrowserRouter, RouterProvider, HashRouter} from "react-router-dom";
 
 const router = createBrowserRouter([
   {
@@ -32,21 +33,24 @@ const router = createBrowserRouter([
     path: "/contact",
     element: <Contact />
   }
- /*,
+ ,
   {
     path: "*",
     element: <NotFound />
-  }*/
+  }
 ])
 function ThemContextProvider({children}:{children: any}) {
 
   return (
-    <div className="root">{}
+    <div className="root">
+      <HashRouter basename={BASE_URL_SITE}>
         <RouterProvider router={router} fallbackElement={children}>
-      
-       
-          
+        
+        
+            
         </RouterProvider>
+      </HashRouter>
+        
     
 
     </div>
