@@ -18,7 +18,7 @@ export default function Accueil(){
                         <p>Le but de l'association est d'organiser un réseau de familles d'accueil bénévoles qui se relaient pour une période limitée (6 mois maximum), pour accueillir un demandeur d'asile pendant une période d'environ 3 semaines chacune.
                             La famille assure l'hébergement et le repas du soir, cela permet de nouer une relation humaine privilégiée avec l'accueilli.</p>
                         <br />
-                        <p>Pour atteindre ces objectifs, un fonctionnement a été mis en place :</p>
+                        <p>Pour atteindre ces objectifs, un fonctionnement a été mis en place:</p>
                         <ul>
                             <li className="m">Commission d'admission</li>
                             <li className="m">Familles d’accueil</li>
