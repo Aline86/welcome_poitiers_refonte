@@ -59,8 +59,9 @@
   }
   .full{
     
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
     object-fit: cover;
     
   }
@@ -130,5 +131,12 @@
   }
   .secondm{
     margin-left:  0px;
+  }
+
+ 
+
+  .texte {
+    top: 110px;
+    margin-bottom: 0;
   }
 }
