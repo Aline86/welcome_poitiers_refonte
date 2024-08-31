@@ -13,9 +13,9 @@ export default function Contact(){
                 <h1 className="left">CONTACT</h1>
                 <br />
                 <br />
-                <p><b>Adresse email: </b> welcomepoitiers@outlook.fr</p>
+                <p style={{ textAlign: "left"}}><b>Adresse email: </b> welcomepoitiers@outlook.fr</p>
                 <br />
-                <p><b>Adresse postale: </b> 23-25, rue du Général Sérail 86000 POITIERS</p>
+                <p style={{ textAlign: "left"}}><b>Adresse postale: </b> 23-25, rue du Général Sérail 86000 POITIERS</p>
             </div>
             <div className={!result.matches? `${"footer fixed"}` : `${"footer not-fixed"}`}>
                 <Footer />
