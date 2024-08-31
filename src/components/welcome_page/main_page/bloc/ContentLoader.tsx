@@ -5,7 +5,7 @@ const MyLoader = ({props}: {props: any}) => (
     speed={2}
     width={380}
     height={500}
-    viewBox="0 0 300 500"
+    viewBox="0 0 380 400"
     backgroundColor="#f3f3f3"
     foregroundColor="#ecebeb"
     {...props}
