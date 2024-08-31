@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import s from './style.module.css'
 import {Link} from 'react-router-dom'
 import ContentLoader from "./ContentLoader"
