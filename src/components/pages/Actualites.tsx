@@ -7,6 +7,7 @@ import article3 from './img/article3.png'
 import article4 from './img/article4.png'
 import article5 from './img/article5.png'
 import Footer from "../footer/footer"
+import ScrollToTop from "./../../ScrollToTop"
 
 export default function Actualites(){
     const [toggle, setToggle] = useState(false)
@@ -261,6 +262,7 @@ export default function Actualites(){
             <div className="footer not-fixed">
                 <Footer />
             </div>
+            <ScrollToTop />
         </div>
     )
 }

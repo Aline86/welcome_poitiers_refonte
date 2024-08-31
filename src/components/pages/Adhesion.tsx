@@ -1,6 +1,7 @@
 import bulletin_adhesion from '../../assets/img/bulletin_adhesion.pdf'
 import Header from "../header/header"
 import Footer from "../footer/footer"
+import ScrollToTop from "./../../ScrollToTop"
 
 export default function Adhesion(){
     const result = window.matchMedia("(max-width: 1000px)");
@@ -21,6 +22,7 @@ export default function Adhesion(){
             <div className={!result.matches? `${"footer fixed"}` : `${"footer not-fixed"}`}>
                 <Footer />
             </div>
+            <ScrollToTop />
         </div>
     )
 }

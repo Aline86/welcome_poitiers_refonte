@@ -120,3 +120,15 @@
     background:  rgb(82, 82, 82)!important;
     
   }
+
+
+  
+@media screen and (max-width: 1000px) {
+
+  .m {
+    margin-left:  0px;
+  }
+  .secondm{
+    margin-left:  0px;
+  }
+}

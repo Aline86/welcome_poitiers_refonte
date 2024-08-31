@@ -4,7 +4,7 @@ import HeaderBody from "./header_body/header_body"
 import Header from "../header/header"
 import Footer from "../footer/footer"
 import Main from "./main_page/main"
-
+import ScrollToTop from "./../../ScrollToTop"
 
 
 interface WelcomeInfo {
@@ -22,6 +22,7 @@ function Welcome({}: WelcomeInfo) {
         <HeaderBody />
         <Main />
         <Footer />
+        <ScrollToTop />
     </div>
     
   )

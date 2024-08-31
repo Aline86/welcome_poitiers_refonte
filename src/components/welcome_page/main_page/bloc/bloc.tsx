@@ -1,6 +1,7 @@
+import { useEffect, useState } from 'react'
 import s from './style.module.css'
 import {Link} from 'react-router-dom'
-
+import ContentLoader from "./ContentLoader"
 
   
 interface BlocInfo {
@@ -9,27 +10,30 @@ interface BlocInfo {
   img: string
 } 
 function Bloc({route, title, img}: BlocInfo) {
-  console.log("route", route)
+
+  const [loaded, isLoaded] = useState(false)
+  const updateLoaded = (state: boolean) => {
+    console.log("inside", state)
+    isLoaded(state)
+  }
 
   return (
     <div className={s.bloc} >
       
-      <Link    to={route}  >
-    
-      <div className={s.image_container}>
-        <img src={img} alt={img} />
-        <div className={s.title}>
-          {title}
-        </div>
-      </div>
-          
-            
-          
-        
+      <Link to={route}  >
       
-    
-    </Link  >  
-  </div>
+      <div className={s.image_container} >
+          {!loaded && (<ContentLoader props=""/>)
+            }
+            <>
+            <img src={img} alt={img} onLoad={() => updateLoaded(true)} style={{ display: loaded ? "block" : "none" }}/>
+              <div className={s.title} style={{ display: loaded ? "block" : "none" }}>
+                {title}
+              </div>
+            </>
+          </div>
+      </Link  >  
+    </div>
  
   )
 }

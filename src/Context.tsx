@@ -7,6 +7,7 @@ import WelcomePage from './components/welcome_page/welcome'
 import {BASE_URL_SITE} from './config.tsx'
 import {  Routes, Route, HashRouter} from "react-router-dom";
 
+
 function ThemContextProvider({}:{children: any}) {
 
   return (
@@ -34,10 +35,10 @@ function ThemContextProvider({}:{children: any}) {
           </Route>
 
       </Routes>
-       
+             
+     
       </HashRouter>
-        
-    
+  
 
     </div>
   )

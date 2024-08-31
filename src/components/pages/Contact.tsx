@@ -1,5 +1,6 @@
 import Header from "../header/header"
 import Footer from "../footer/footer"
+import ScrollToTop from "./../../ScrollToTop"
 
 export default function Contact(){
     const result = window.matchMedia("(max-width: 1000px)");
@@ -16,9 +17,10 @@ export default function Contact(){
                 <br />
                 <p><b>Adresse postale: </b> 23-25, rue du Général Sérail 86000 POITIERS</p>
             </div>
-            <div className={!result.matches ? `${"footer fixed"}` : `${"footer not-fixed"}`}>
+            <div className={!result.matches? `${"footer fixed"}` : `${"footer not-fixed"}`}>
                 <Footer />
             </div>
+            <ScrollToTop />
         </div>
     )
 }

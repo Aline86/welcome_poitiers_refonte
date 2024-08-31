@@ -1,7 +1,8 @@
 import Header from "../header/header"
 import presentation from '../../assets/img/presentation.png'
 import Footer from "../footer/footer"
-    
+import ScrollToTop from "./../../ScrollToTop"
+
 export default function Presentation(){
     return (
         <div className="container">
@@ -12,6 +13,7 @@ export default function Presentation(){
             <div className="footer not-fixed">
                 <Footer />
             </div>
+            <ScrollToTop />
         </div>
     )
 }
