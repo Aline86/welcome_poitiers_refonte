@@ -25,7 +25,7 @@ function Header({}: HeaderInfo) {
           <Nav opened={open}/>
         </div>
         </div>
-        <div className={s.title}><div className={s.title_container}>Welcome Poitiers<span></span></div></div>
+        <div className={s.title}><div className={s.title_container}><h1>Welcome Poitiers</h1><span></span></div></div>
         <div className={s.end}>
             <div className={s.facebook}><img src={facebook} alt="facebook"/></div>
             <Link to="/"><div className={s.logo}><img src={logo} alt="logo" /></div></ Link>

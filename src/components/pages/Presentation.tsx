@@ -42,7 +42,7 @@ export default function Accueil(){
                         <p>Le fait de faire partie d’un réseau permet d’agir collectivement dans l’accueil et qu’aucun acteur de la solidarité ne soit isolé.</p>
                     </div>
                 </div>
-                <div className="footer not-fixed">
+                <div className="footer fixed">
                     <Footer />
                 </div>
                 <ScrollToTop />
