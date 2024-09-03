@@ -23,14 +23,16 @@ function Bloc({route, title, img}: BlocInfo) {
       <Link to={route}  >
       
       <div className={s.image_container} >
-          {!loaded && (<ContentLoader props=""/>)
-            }
-            <>
-            <img src={img} alt={img} onLoad={() => updateLoaded(true)} style={{ display: loaded ? "block" : "none" }}/>
-              <div className={s.title} style={{ display: loaded ? "block" : "none" }}>
-                {title}
-              </div>
-            </>
+          {!loaded && (<ContentLoader props=""/>)}
+          
+            <div className={s.image}>
+              <img src={img} alt={img} onLoad={() => updateLoaded(true)} style={{ display: loaded ? "flex" : "none" }}/>
+            </div>
+            
+            <div className={s.title} style={{ display: loaded ? "block" : "none" }}>
+              {title}
+            </div>
+          
           </div>
       </Link  >  
     </div>
