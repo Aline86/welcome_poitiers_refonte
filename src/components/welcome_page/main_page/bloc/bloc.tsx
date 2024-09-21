@@ -25,9 +25,9 @@ function Bloc({route, title, img}: BlocInfo) {
       <div className={s.image_container} >
           {!loaded && (<ContentLoader props=""/>)}
           
-            <div className={s.image}>
-              <img src={img} alt={img} onLoad={() => updateLoaded(true)} style={{ display: loaded ? "flex" : "none" }}/>
-            </div>
+            
+            <img src={img} alt={img} onLoad={() => updateLoaded(true)} style={{ display: loaded ? "flex" : "none" }}/>
+            
             
             <div className={s.title} style={{ display: loaded ? "block" : "none" }}>
               {title}

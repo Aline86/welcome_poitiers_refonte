@@ -4,6 +4,7 @@ import ScrollToTop from "./../../ScrollToTop"
 import './styles/global.css';
 
 export default function Accueil(){
+    const result = window.matchMedia("(max-width: 1000px)");
     return (
             <div className="container">
                 <Header />
@@ -42,7 +43,7 @@ export default function Accueil(){
                         <p>Le fait de faire partie d’un réseau permet d’agir collectivement dans l’accueil et qu’aucun acteur de la solidarité ne soit isolé.</p>
                     </div>
                 </div>
-                <div className="footer fixed">
+                <div className={!result.matches? `${"footer fixed"}` : `${"footer not-fixed"}`}>
                     <Footer />
                 </div>
                 <ScrollToTop />

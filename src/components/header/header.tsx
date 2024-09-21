@@ -27,7 +27,7 @@ function Header({}: HeaderInfo) {
         </div>
         <div className={s.title}><div className={s.title_container}><h1>Welcome Poitiers</h1><span></span></div></div>
         <div className={s.end}>
-            <div className={s.facebook}><img src={facebook} alt="facebook"/></div>
+            <a className={s.facebook} href="https://www.facebook.com/WelcomePoitiers/?locale=fr_FR" title='lien facebook' target='_blank'><img src={facebook} alt="facebook" /></a>
             <Link to="/"><div className={s.logo}><img src={logo} alt="logo" /></div></ Link>
         </div>
        
